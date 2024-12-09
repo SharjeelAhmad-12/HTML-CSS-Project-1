@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TFT</title>
+    <link rel="icon" href="/image/Logo-icon-main.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div>
+            <img src="./image//Logo-main.png" class="header-logo" alt="Site Logo">
+        </div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#card-section">Cards</a></li>
+                <li><a href="#Table">Table</a></li>
+                <li class="dropdown">
+                    <a href="#">Dropdown</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact-Form">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <a href="#"><button class="nav-btn">Join Us</button></a>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- CARD -->
+        <section id="card-section">
+            <h1 class="heading">CARDS</h1>
+            <div class="card-container">
+                <div class="card">
+                    <span class="icon">
+                        <i class="fa-brands fa-html5"></i>
+                    </span>
+                    <p class="card-title">HTML - The Language of the Web</p>
+                    <p class="card-description">HTML (HyperText Markup Language) is the foundation of web development.
+                        It
+                        structures content on the web, enabling everything</p>
+                </div>
+
+                <div class="card">
+                    <span class="icon">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </span>
+                    <p class="card-title">CSS - Styling the Web</p>
+                    <p class="card-description">CSS (Cascading Style Sheets) controls the look and feel of the web. It
+                        allows
+                        you to style the layout, colors, fonts, and animations on webpages.</p>
+                </div>
+
+                <div class="card">
+                    <span class="icon">
+                        <i class="fa-brands fa-js"></i>
+                    </span>
+                    <p class="card-title">JavaScript - Making the Web Interactive</p>
+                    <p class="card-description">JavaScript is a programming language that brings interactivity to
+                        webpages. It
+                        allows for dynamic content, form validation, and much more.</p>
+                </div>
+
+                <div class="card">
+                    <span class="icon">
+                        <i class="fa-brands fa-react"></i>
+                    </span>
+                    <p class="card-title">React - Building User Interfaces</p>
+                    <p class="card-description">React is a JavaScript library for building interactive user interfaces.
+                        It
+                        allows you to create reusable components for efficient development.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TABLE -->
+        <section id="Table">
+            <h1 class="heading">TABLE</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th colspan="6">Time Table</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="6">Hours</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                    </tr>
+                    <tr>
+                        <td>Math</td>
+                        <td>Science</td>
+                        <td>Math</td>
+                        <td>Science</td>
+                        <td>Arts</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">Lunch</td>
+                    </tr>
+                    <tr>
+                        <td>Math</td>
+                        <td>Science</td>
+                        <td>Math</td>
+                        <td>Science</td>
+                        <td rowspan="2">Project</td>
+                    </tr>
+                    <tr>
+                        <td>Math</td>
+                        <td>Science</td>
+                        <td>Math</td>
+                        <td>Science</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- FORM -->
+        <section id="contact-Form">
+            <h1 class="heading">Form</h1>
+            <form class="form-container">
+                <div class="input-group">
+                    <label>
+                        <i class="fa-solid fa-envelope" style="color: #0F0000;"></i>
+                        <input type="email" placeholder="Email" required>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label>
+                        <i class="fa-solid fa-lock" style="color: #000205;"></i>
+                        <input type="password" placeholder="Password" required>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label>
+                        <i class="fa-solid fa-lock" style="color: #000205;"></i>
+                        <input type="password" placeholder="Re-type Password" required>
+                    </label>
+                </div>
+                <div class="name-group">
+                    <label>
+                        <i class="fa-solid fa-person" style="color: #00040A;"></i>
+                        <input type="text" placeholder="First Name" required>
+                    </label>
+                    <label>
+                        <i class="fa-solid fa-person" style="color: #00040A;"></i>
+                        <input type="text" placeholder="Last Name" required>
+                    </label>
+                </div>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" required> Male</label>
+                    <label><input type="radio" name="gender" required> Female</label>
+                </div>
+                <div class="input-group">
+                    <select required>
+                        <option value="">Select a country</option>
+                        <option value="US">United States</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="CA">Canada</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                </div>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" required> I agree with terms and conditions</label>
+                    <label><input type="checkbox"> I want to receive the newsletter</label>
+                </div>
+                <button type="submit" class="register-button" id="registerBtn">Register</button>
+            </form>
+
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <!-- News Subscription -->
+            <section class="news-subscription">
+                <div>
+                    <h2 class="title">News Subscription</h2>
+                    <p class="description">Get Latest Deals from Waker's Inbox & Subscribe Now</p>
+                </div>
+                <form class="Form">
+                    <div class="form-input-wrapper">
+                        <input type="email" id="email" placeholder="Email Address" class="form-Input" required />
+                        <i class="fas fa-envelope icon-mail"></i>
+                    </div>
+                    <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+                </form>
+            </section>
+
+            <!-- Footer Content -->
+            <section class="footer-content">
+                <!-- About Company -->
+                <article class="footer-section">
+                    <h3 class="footer-heading">ABOUT COMPANY</h3>
+                    <p class="text">
+                        Professionally redefine transparent ROI through low-risk high-yield imperatives.
+                        Progressively create empowered, cost-effective users via team-driven.
+                    </p>
+                    <nav class="social-icons" aria-label="Social media links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </nav>
+                </article>
+
+                <!-- Quick Links -->
+                <article class="footer-section">
+                    <h3 class="footer-heading">QUICK LINKS</h3>
+                    <ul class="links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Team</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                    </ul>
+                </article>
+
+                <!-- IT Services -->
+                <article class="footer-section">
+                    <h3 class="footer-heading">IT SERVICES</h3>
+                    <ul class="links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Web Development</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Business Development</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Product Management</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> UI/UX Design</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Cloud Services</a></li>
+                    </ul>
+                </article>
+
+
+                <!-- Recent Posts -->
+                <article class="footer-section">
+                    <h3 class="footer-heading">RECENT POSTS</h3>
+                    <div class="recent-posts">
+                        <article class="post">
+                            <div class="post-thumbnail"></div>
+                            <div class="post-info">
+                                <a href="#" class="post-title">Unsatiable Entreaties May <br> Collecting Power.</a>
+                                <time class="post-meta">Feb 13 2023</time>
+                            </div>
+                        </article>
+                        <article class="post">
+                            <div class="post-thumbnail"></div>
+                            <div class="post-info">
+                                <a href="#" class="post-title">Regional Manager Limited <br> Time Management.</a>
+                                <time class="post-meta">Feb 13 2023</time>
+                            </div>
+                        </article>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </footer>
+
+</body>
+
+</html>
