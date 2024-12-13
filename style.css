@@ -144,7 +144,9 @@ header {
   border: 1px solid #3da077;
   border-radius: 2.5rem;
   padding: 2.5rem;
-  width: auto;
+  /* width: auto; */
+  width: 48%;
+
 }
 .card:hover {
   filter: drop-shadow(1px 10px 15px rgba(250, 113, 33, 0.925));
